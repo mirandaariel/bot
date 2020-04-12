@@ -1,0 +1,6 @@
+.git
+.htaccess
+app_exclude_sync.txt
+core
+project/upld
+project/php/core/*.txt

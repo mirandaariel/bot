@@ -1,0 +1,27 @@
+.form-top-search .input-group {
+  margin-top: 13px; 
+}
+
+.form-top-search .input-group .form-control {
+  border: 1px solid #e5e6e7;
+  height: 34px;
+}
+
+.product-imitation{
+  padding: 0px;
+}
+
+.left-panel {
+  padding-top: 50px;
+  z-index: 98;
+}
+
+.data-panel,
+.right-panel {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  padding-bottom: 39px;
+  padding-top: 60px;
+  z-index: 99;
+}

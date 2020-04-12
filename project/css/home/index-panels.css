@@ -1,0 +1,168 @@
+.form-top-search .input-group {
+  margin-top: 13px; 
+}
+
+.form-top-search .input-group .form-control {
+  border: 1px solid #e5e6e7;
+  height: 34px;
+}
+
+.product-imitation{
+  padding: 0px;
+}
+
+.left-panel {
+  height: 100%;
+  position: fixed;
+  padding-bottom: 39px;
+  padding-top: 60px;
+  z-index: 99;
+}
+
+.right-panel {
+  padding-top: 50px;
+  z-index: 98;
+  float: right;
+}
+
+.data-panel {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  padding-bottom: 39px;
+  padding-top: 60px;
+  z-index: 99;
+}
+
+.specie-metric-2 .ibox-content {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.panel-tags {
+  padding: 0px;
+  text-align: justify;
+  margin-left: 10px;
+}
+
+.col-lg-6 .tags { 
+  font: none;
+  border: 0px solid red;
+  background-color: rgba(0, 0, 0, 0.5);
+  float: left;
+  padding: 0;
+  position: absolute;
+  width: 150px;
+  margin: 6px 0 0 -5px;
+}
+
+.col-lg-12 .tags { 
+  font: none;
+  margin: 0px 0px 5px 0px;
+  border: 0px solid red;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  float: left;
+  width: 225px;
+  position: absolute;
+}
+
+.col-lg-6 .tags .flag,
+.col-lg-12 .tags .flag {
+  background-color: #ffffff;
+  height: 100%;
+  position: absolute;
+  width: 2px;
+}
+
+.col-lg-6 .tags .red,
+.col-lg-12 .tags .red {
+  background-color: red;
+}
+
+.col-lg-6 .light-blue,
+.col-lg-12 .light-blue {
+  background-color: #3E7BB6 !important;
+}
+
+.col-lg-6 .tags .cont {
+  float: left;
+  padding: 5px;
+}
+
+.col-lg-12 .tags .cont {
+  float: left;
+  padding: 5px 10px 5px 12px;
+}
+
+.col-lg-12 .tags .cont .titu {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0px 0px 0px 0px;
+  line-height: 1.5em;
+}
+
+.col-lg-6 .tags .cont .desc,
+.col-lg-12 .tags .cont .desc {
+  font-size: 12px;
+  color: #CACAD8;
+  margin: 0px 0px 0px 0px;
+  line-height: 1.5em;
+}
+
+.col-lg-6 .tags .cont .ptos,
+.col-lg-12 .tags .cont .ptos {
+  font-size: 25px;
+  color: #ffffff;
+  margin: 0px 0px 0px 0px;
+  line-height: 1.5em;
+}
+
+.col-lg-6 .state-conservation {
+  float: left;
+  height: 15px;
+  width: 15px; 
+  margin-right: 5px;
+}
+
+.col-lg-12 .state-conservation {
+  float: left;
+  height: 25px;
+  margin-right: 5px;
+  margin-top: 8px;
+  width: 25px;
+}
+
+.col-lg-6 .conservation-info {
+  width: 100%;
+}
+
+.col-lg-6 .conservation-info .titu {
+  font-size: 12px;
+  color: #ffffff;
+  margin: -2px 0 0;
+  line-height: 1.5em;
+  padding-top: 0px;
+}
+
+.col-lg-6 .conservation-info .desc {
+  display: none;
+}
+
+.col-lg-6 .record-data,
+.col-lg-6 .record-info {
+  display: none;
+}
+
+.col-lg-6 .photo-data {
+  display: none;
+}
+
+.col-lg-6 .photo-data .photographer {
+  color: #fff;
+  display: none;
+}
+
+.col-lg-6 .photo-data .camera {
+  display: none;
+}
