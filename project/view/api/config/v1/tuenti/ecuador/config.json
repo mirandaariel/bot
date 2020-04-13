@@ -1,0 +1,119 @@
+{
+    "carrier": {
+        "public_key" : {
+            "file_name" : "TUEC-ES521-public.pem",
+            "folder_path" : "",
+            "url" : ""
+        },
+        "resource": {
+            "pin": {
+                "allow_method": ["POST"],
+                "method": {
+                    "POST": {
+                        "url": "http://api-dev.uplinkbusiness.com/api/v2/pin/generate",
+                        "data_type": "json",
+                        "data_client": ["cellphone_number"],
+                        "data_mapping": {
+                            "subscriberId": "cellphone_number",
+                            "serviceId": "service_id"
+                        },
+                        "data": { 
+                            "subscriberId": null,
+                            "serviceId": null
+                        },
+                        "headers": [
+                            "apikey: 6gwHyMfdXvXjxMyjjdCXPa:7rLJhkiwnmtzVDna3jfaXo",
+                            "Content-Type: application/json"
+                        ]
+                    },
+                    "POST_verify": {
+                        "url": "https://api-dev.uplinkbusiness.com/api/v2/pin/verify",
+                        "data_type": "json",
+                        "data_client": ["cellphone_number", "service_id"],
+                        "data_mapping": {
+                            "subscriberId": "cellphone_number",
+                            "serviceId": "service_id",
+                            "pin": "id"
+                        },
+                        "data": { 
+                            "subscriberId": null,
+                            "serviceId": null,
+                            "pin": null
+                        },
+                        "headers": [
+                            "apikey: 6gwHyMfdXvXjxMyjjdCXPa:7rLJhkiwnmtzVDna3jfaXo",
+                            "Content-Type: application/json"
+                        ]
+                    }
+                }
+            },
+            "messageMT": {
+                "allow_method": ["POST"],
+                "method": {
+                    "POST": {
+                        "url": "https://api-dev.uplinkbusiness.com/api/v2/sendMT",
+                        "data_type": "json",
+                        "data_client": ["service_id", "cellphone_number", "message", "short_code"],
+                        "data_mapping": {
+                            "subscriberId": "cellphone_number",
+                            "serviceId": "service_id",
+                            "message": "message",
+                            "sc": "short_code"
+                        },
+                        "data": { 
+                            "subscriberId": null,
+                            "serviceId": null,
+                            "sc": null,
+                            "chargeType": 1,
+                            "message": "default message"
+                        },
+                        "headers": [
+                            "apikey: 6gwHyMfdXvXjxMyjjdCXPa:7rLJhkiwnmtzVDna3jfaXo",
+                            "Content-Type: application/json"
+                        ]
+                    }
+                }
+            },
+            "messageMTBulk": {
+                "allow_method": ["POST"],
+                "method": {
+                    "POST": {
+                        "url": "https://api-dev.uplinkbusiness.com/api/v2/sendMTBulk",
+                        "data_type": "json",
+                        "data_client": ["service_id", "message", "short_code"],
+                        "data_mapping": {
+                            "serviceId": "service_id",
+                            "message": "message",
+                            "sc": "short_code"
+                        },
+                        "data": { 
+                            "serviceId": null,
+                            "sc": null,
+                            "chargeType": 1,
+                            "message": "default message"
+                        },
+                        "headers": [
+                            "apikey: 6gwHyMfdXvXjxMyjjdCXPa:7rLJhkiwnmtzVDna3jfaXo",
+                            "Content-Type: application/json"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "service": {
+        "1": {
+            "name": "Servicio 1",
+            "message": {
+                "messageMTBulk": "Mesaje default para el servicio 1"
+            }
+        },
+        "2": {
+            "name": "Servicio 2",
+            "message": {
+                "messageMT": "Mesaje default para el servicio 2",
+                "messageMTBulk": "Mesaje default para el servicio 2"
+            }
+        }
+    }
+}
